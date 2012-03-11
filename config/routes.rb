@@ -1,4 +1,24 @@
 Nagster::Application.routes.draw do
+  get "pages/Home"
+
+  get "pages/Contact"
+
+  get "pages/About"
+
+  get "pages/Register"
+
+  get "pages/LogOn"
+
+  get "pages/Main"
+
+  get "pages/NagFriends"
+
+  get "pages/AddSearchFriends"
+
+  get "pages/ViewOtherPersons"
+
+  get "pages/NagPopUp"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
