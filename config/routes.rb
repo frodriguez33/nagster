@@ -1,24 +1,28 @@
 Nagster::Application.routes.draw do
-  get "pages/Home"
-
+  #get "pages/Home"
   get "pages/Contact"
-
   get "pages/About"
-
   get "pages/Register"
-
   get "pages/LogOn"
-
   get "pages/Main"
-
   get "pages/NagFriends"
-
   get "pages/AddSearchFriends"
-
   get "pages/ViewOtherPersons"
-
   get "pages/NagPopUp"
 
+  #match '/Home', :to => 'pages#Home'  
+  match '/Contact', :to => 'pages#Contact'
+  match '/About', :to => 'pages#About'
+  match '/Register', :to => 'pages#Register'
+  match '/LogOn', :to => 'pages#LogOn'
+  match '/Main', :to => 'pages#Main'  
+  match '/NagFriends', :to => 'pages#NagFriends'
+  match '/AddSearchFriends', :to => 'pages#AddSearchFriends'  
+  match '/ViewOtherPersons', :to => 'pages#ViewOtherPersons'    
+  match '/NagPopUp', :to => 'pages#NagPopUp'  
+  
+  root :to => 'pages#Home'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
